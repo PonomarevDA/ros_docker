@@ -1,0 +1,6 @@
+# Exclude everything by default
+**
+
+# Include only specific folders/files
+!example_package/
+!scripts/install.sh
