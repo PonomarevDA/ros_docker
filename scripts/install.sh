@@ -15,6 +15,7 @@ fi
 
 $SUDO apt-get update
 $SUDO apt-get install $FORCE_APT_INSTALL ros-noetic-rviz \
+                                         ros-noetic-ros-tutorials \
                                          python3-pip
 
 pip3 install catkin_tools
