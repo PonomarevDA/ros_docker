@@ -25,3 +25,7 @@ RUN cd /catkin_ws && catkin init
 COPY example_package/CMakeLists.txt /catkin_ws/src/example_package/CMakeLists.txt
 COPY example_package/package.xml /catkin_ws/src/example_package/package.xml
 RUN source /opt/ros/noetic/setup.bash && cd /catkin_ws && catkin build
+
+RUN sudo apt-get update && sudo apt-get install -y ros-noetic-mavros
+RUN sudo apt-get update && sudo apt-get install -y ros-noetic-mavros-extras
+RUN wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh && sudo bash install_geographiclib_datasets.sh
